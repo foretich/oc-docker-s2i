@@ -2,5 +2,7 @@
 
 FROM registry.access.redhat.com/ubi7:latest
 
-CMD ["/bin/bash", "-c", "sleep infinity"]
-# CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
+# changed the following line by adding a hash at the front
+# CMD ["/bin/bash", "-c", "sleep infinity"]
+# changed the following line by removing the hash at the front
+CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
